@@ -1,15 +1,24 @@
 import React, { Component } from 'react';
+import List from './components/list/list';
 import logo from './logo.svg';
 
 class App extends Component {
+  state = {
+    list: [
+      'Wake up',
+      'Make breakfast',
+      'Shower',
+      'Get dressed',
+      'Leave for interview'
+    ]
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img style={{width: '100px', height: '100px'}} src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <List list={this.state.list} />
         </header>
       </div>
     );
