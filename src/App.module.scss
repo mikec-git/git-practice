@@ -1,0 +1,19 @@
+.App {
+  width: 100%;
+  border: 1px solid black;
+
+  &__Wrapper {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__Logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid red;
+  }
+}
