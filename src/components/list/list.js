@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from './listItem/listItem';
+import ListItem from './ListItem/ListItem';
 
 const list = (props) => {
   const lis = props.list.map(li => {
