@@ -3,6 +3,8 @@ import List from './components/List/List';
 import Title from './components/Title/Title';
 import logo from './logo.svg';
 
+import c from './App.module.scss';
+
 class App extends Component {
   state = {
     list: [
@@ -18,12 +20,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img style={{width: '100px', height: '100px'}} src={logo} className="App-logo" alt="logo" />
+      <div className={c.App}>
+        <div className={c.App__Wrapper}>
+          <img src={logo} className={c.App__Logo} alt="logo" />
           <Title text='To-Do List' />
           <List list={this.state.list} />
-        </header>
+        </div>
       </div>
     );
   }
