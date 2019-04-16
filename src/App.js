@@ -18,13 +18,20 @@ class App extends Component {
     ]
   }
 
+  listItemClickedHandler = (index) => {
+    const newList = [...this.state.list];
+    newList.splice(index, 1);
+
+    this.setState({ list: newList });
+  }
+
   render() {
     return (
       <div className={c.App}>
         <div className={c.App__Wrapper}>
           <img src={logo} className={c.App__Logo} alt="logo" />
           <Title text='To-Do List' />
-          <List list={this.state.list} />
+          <List list={this.state.list} itemClick={this.listItemClickedHandler} />
         </div>
       </div>
     );

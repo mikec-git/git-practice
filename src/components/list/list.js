@@ -2,8 +2,11 @@ import React from 'react';
 import ListItem from './ListItem/ListItem';
 
 const list = (props) => {
-  const lis = props.list.map(li => {
-    return <ListItem key={li} text={li} />
+  const lis = props.list.map((li, i) => {
+    return <ListItem 
+      key={li} 
+      text={li}
+      itemClick={() => props.itemClick(i)} />
   });
 
   return ( 
