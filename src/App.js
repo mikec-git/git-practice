@@ -14,7 +14,7 @@ class App extends Component {
       'Get dressed',
       'Leave for interview',
       'Pass interview!',
-      'Go back home'
+      'Go back home!'
     ]
   }
 
