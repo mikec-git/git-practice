@@ -9,7 +9,8 @@ class App extends Component {
       'Make breakfast',
       'Shower',
       'Get dressed',
-      'Leave for interview'
+      'Leave for interview',
+      'Pass interview!'
     ]
   }
 
